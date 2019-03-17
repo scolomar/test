@@ -2,7 +2,7 @@
 
 ./return_1
 ret=$?
-if ((${ret} == 0)); then
+if [ ${ret} -eq 0 ]; then
 	echo	"./return_1	OK"
 else
 	echo	"./return_1	FAIL	error: ${ret}"
